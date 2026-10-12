@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Registration | Student Help Desk</title><link rel="stylesheet" href="style.css"><script src="app.js" defer></script></head>
+<body>
+<header class="site-header"><a class="brand" href="index.html">Student Help Desk</a><nav aria-label="Main navigation"><a href="index.html">Home</a><a href="register.html">Registration</a><a href="login.html">Sign In</a><a href="contact.html">Contact Us</a></nav></header>
+<main class="form-wrap"><section class="form-card"><p class="eyebrow">JOIN THE HELP DESK</p><h1>Create your account</h1><p class="muted">Enter your details to continue.</p>
+<form id="registerForm" novalidate>
+<label for="fullName">Full name</label><input id="fullName" name="fullName" autocomplete="name" required minlength="2" maxlength="60" pattern="[A-Za-z][A-Za-z .'-]{1,59}"><small class="error" id="fullNameError"></small>
+<label for="regEmail">University email</label><input id="regEmail" name="email" type="email" autocomplete="email" required maxlength="254"><small class="error" id="regEmailError"></small>
+<label for="regPassword">Password</label><input id="regPassword" name="password" type="password" autocomplete="new-password" required minlength="8" maxlength="64"><small class="hint">Use at least 8 characters.</small><small class="error" id="regPasswordError"></small>
+<label for="confirmPassword">Confirm password</label><input id="confirmPassword" name="confirmPassword" type="password" autocomplete="new-password" required minlength="8" maxlength="64"><small class="error" id="confirmPasswordError"></small>
+<label class="check"><input id="terms" type="checkbox" required> I confirm that the information provided is accurate.</label><small class="error" id="termsError"></small>
+<button class="button" type="submit">Create account</button><p id="registerMessage" class="message" role="status" aria-live="polite"></p>
+</form><p class="muted">Already registered? <a href="login.html">Sign in</a></p></section></main><footer>Student Help Desk System · SCD Semester Project</footer>
+</body></html>
